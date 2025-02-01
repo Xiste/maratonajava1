@@ -13,3 +13,4 @@ O funcionamento do Java baseia-se no conceito de "Write Once, Run Anywhere" (Esc
 A JVM é a chave para a portabilidade do Java, pois cada sistema operacional tem sua própria implementação da JVM. Isso permite que o mesmo bytecode funcione em diferentes plataformas sem modificações.
 
 ![compilacaojava.png](compilacaojava.png)
+
