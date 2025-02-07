@@ -1,0 +1,66 @@
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+!**/src/main/**/out/
+!**/src/test/**/out/
+*.iml
+
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+
+### Build ###
+out/
+/build/
+/bin/
+/target/
+
+### Maven ###
+.mvn/
+!**/src/main/**/.mvn/
+!**/src/test/**/.mvn/
+log/
+
+### Gradle ###
+.gradle/
+/build/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### Mac OS ###
+.DS_Store
+
+### Windows ###
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+nul
+
+### Logs ###
+*.log
+
+### Temporary Files ###
+*.tmp
+*.swp
+*.swo
+*.bak
