@@ -1,19 +1,40 @@
 ### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+
+### Java ###
+*.class
+*.jar
+*.war
+*.ear
+
+### Build ###
+/build/
+/bin/
+/target/
+
+### Maven ###
+.mvn/
+!**/src/main/**/.mvn/
+!**/src/test/**/.mvn/
+log/
+
+### Gradle ###
+.gradle/
+/build/
 
 ### Eclipse ###
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
 
 ### NetBeans ###
 /nbproject/private/
@@ -27,3 +48,18 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Windows ###
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+nul
+
+### Logs ###
+*.log
+
+### Temporary Files ###
+*.tmp
+*.swp
+*.swo
+*.bak
