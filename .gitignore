@@ -2,7 +2,6 @@
 .idea/
 *.iml
 *.iws
-out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
@@ -13,6 +12,7 @@ out/
 *.ear
 
 ### Build ###
+out/
 /build/
 /bin/
 /target/
