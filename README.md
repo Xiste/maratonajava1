@@ -67,3 +67,204 @@ Os operadores lógicos são usados para realizar operações lógicas entre expr
 
 4. **^ (OU exclusivo)**: Retorna `true` se as expressões forem diferentes (uma verdadeira e outra falsa).
     - Exemplo: `boolean result = (5 > 3) ^ (10 > 20); // result será true`
+
+# Estruturas Condicionais em Java
+
+Em Java, as estruturas condicionais são utilizadas para controlar o fluxo de execução do programa com base em condições. Essas estruturas permitem que o programa tome decisões e execute diferentes blocos de código conforme necessário.
+
+## `if`, `else if` e `else`
+A estrutura `if-else` é usada para executar blocos de código dependendo da veracidade de uma condição.
+
+### Exemplo de `if`
+```java
+int numero = 10;
+if (numero > 0) {
+    System.out.println("O número é positivo.");
+}
+```
+Se `numero` for maior que 0, a mensagem "O número é positivo." será exibida.
+
+### Exemplo de `if-else`
+```java
+int numero = -5;
+if (numero > 0) {
+    System.out.println("O número é positivo.");
+} else {
+    System.out.println("O número é negativo ou zero.");
+}
+```
+Se `numero` for maior que 0, exibe "O número é positivo.". Caso contrário, exibe "O número é negativo ou zero.".
+
+### Exemplo de `if-else if-else`
+```java
+int numero = 0;
+if (numero > 0) {
+    System.out.println("O número é positivo.");
+} else if (numero < 0) {
+    System.out.println("O número é negativo.");
+} else {
+    System.out.println("O número é zero.");
+}
+```
+Aqui, o código verifica se `numero` é positivo, negativo ou zero e exibe a mensagem correspondente.
+
+## `switch-case`
+A estrutura `switch-case` é usada quando há múltiplas condições a serem avaliadas para uma mesma variável.
+
+### Exemplo de `switch-case`
+```java
+int dia = 3;
+switch (dia) {
+    case 1:
+        System.out.println("Domingo");
+        break;
+    case 2:
+        System.out.println("Segunda-feira");
+        break;
+    case 3:
+        System.out.println("Terça-feira");
+        break;
+    case 4:
+        System.out.println("Quarta-feira");
+    default:
+        System.out.println("Dia inválido");
+}
+```
+Neste exemplo, a variável `dia` é avaliada, e a mensagem correspondente ao número é exibida. O `default` é usado caso nenhum dos valores especificados seja atendido.
+
+## Operador Ternário
+O operador ternário `? :` é uma forma compacta de escrever uma condição `if-else`.
+
+### Exemplo de operador ternário
+```java
+int numero = 10;
+String resultado = (numero > 0) ? "Positivo" : "Negativo ou zero";
+System.out.println(resultado);
+```
+Se `numero` for maior que 0, `resultado` receberá "Positivo"; caso contrário, receberá "Negativo ou zero".
+
+# Laços de Repetição em Java
+
+Os laços de repetição em Java permitem a execução de um bloco de código múltiplas vezes enquanto uma determinada condição for verdadeira. Eles são essenciais para automatizar tarefas repetitivas e reduzir a necessidade de código redundante.
+
+## `for`
+O laço `for` é utilizado quando o número de iterações é conhecido previamente.
+
+### Exemplo de `for`
+```java
+for (int i = 1; i <= 5; i++) {
+    System.out.println("Iteração: " + i);
+}
+```
+Neste exemplo, a variável `i` é inicializada com `1`, e o laço continua até que `i` seja maior que `5`, incrementando `i` a cada iteração.
+
+## `while`
+O laço `while` é usado quando a condição de repetição depende de uma verificação contínua.
+
+### Exemplo de `while`
+```java
+int i = 1;
+while (i <= 5) {
+    System.out.println("Iteração: " + i);
+    i++;
+}
+```
+Aqui, enquanto `i` for menor ou igual a `5`, o bloco de código será executado, incrementando `i` a cada ciclo.
+
+## `do-while`
+O laço `do-while` garante que o bloco de código seja executado pelo menos uma vez antes da verificação da condição.
+
+### Exemplo de `do-while`
+```java
+int i = 1;
+do {
+    System.out.println("Iteração: " + i);
+    i++;
+} while (i <= 5);
+```
+Neste caso, a primeira iteração ocorre independentemente da condição, que só é verificada após a execução do bloco de código.
+
+## `foreach` (Enhanced for loop)
+O `foreach`, ou laço aprimorado `for`, é usado para percorrer elementos de arrays e coleções sem a necessidade de um índice explícito.
+
+### Exemplo de `foreach`
+```java
+int[] numeros = {1, 2, 3, 4, 5};
+for (int num : numeros) {
+    System.out.println("Número: " + num);
+}
+```
+Aqui, cada elemento do array `numeros` é armazenado na variável `num` e impresso no console.
+# Arrays em Java
+
+Os arrays em Java são estruturas de dados que armazenam múltiplos valores do mesmo tipo em uma única variável. Eles são úteis para lidar com conjuntos de elementos de forma eficiente.
+
+## Declaração e Inicialização de Arrays
+
+### Declaração de um Array
+```java
+int[] numeros; // Declara um array de inteiros
+```
+
+### Inicialização de um Array
+```java
+numeros = new int[5]; // Define um array com 5 posições
+```
+Ou declarando e inicializando ao mesmo tempo:
+```java
+int[] numeros = {1, 2, 3, 4, 5};
+```
+
+## Acessando Elementos do Array
+Cada elemento do array pode ser acessado usando seu índice, que começa em `0`.
+```java
+int primeiro = numeros[0]; // Acessa o primeiro elemento
+System.out.println("Primeiro número: " + primeiro);
+```
+
+## Percorrendo um Array
+
+### Usando `for`
+```java
+for (int i = 0; i < numeros.length; i++) {
+    System.out.println("Elemento na posição " + i + ": " + numeros[i]);
+}
+```
+
+### Usando `foreach`
+```java
+for (int num : numeros) {
+    System.out.println("Número: " + num);
+}
+```
+
+## Arrays Multidimensionais
+Arrays podem ter múltiplas dimensões, como matrizes.
+
+### Declaração e Inicialização de um Array Bidimensional
+```java
+int[][] matriz = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+};
+```
+
+### Acessando Elementos da Matriz
+```java
+int elemento = matriz[1][2]; // Acessa o elemento na segunda linha e terceira coluna
+System.out.println("Elemento: " + elemento);
+```
+
+### Percorrendo uma Matriz
+```java
+for (int i = 0; i < matriz.length; i++) {
+    for (int j = 0; j < matriz[i].length; j++) {
+        System.out.print(matriz[i][j] + " ");
+    }
+    System.out.println();
+}
+```
+
+
+
