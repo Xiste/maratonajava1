@@ -4,14 +4,13 @@ Java é uma linguagem de programação orientada a objetos amplamente utilizada 
 
 ## Sumário
 
-1. [Introdução](#introdução)
-2. [Como o Java funciona?](#como-o-java-funciona)
-3. [Tipos Primitivos](#tipos-primitivos)
-4. [Operadores em Java](#operadores-em-java)
-5. [Estruturas Condicionais](#estruturas-condicionais)
-6. [Laços de Repetição](#laços-de-repetição)
-7. [Arrays](#arrays)
-8. [Conclusão](#conclusao)
+1. [Como o Java funciona?](#como-o-java-funciona)
+2. [Tipos Primitivos em Java](#tipos-primitivos-em-java)
+3. [Operadores Aritméticos em Java](#operadores-aritméticos-em-java)
+4. [Operadores Lógicos em Java](#operadores-lógicos-em-java)
+5. [Estruturas Condicionais em Java](#estruturas-condicionais-em-java)
+6. [Laços de Repetição em Java](#laços-de-repetição-em-java)
+7. [Arrays em Java](#arrays-em-java)
 
 
 ## Como o Java funciona?
